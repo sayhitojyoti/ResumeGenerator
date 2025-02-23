@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resume Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* Basic styling for demonstration.  Replace with your actual CSS */
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .cols-3 {
+            display: flex;
+            gap: 10px;
+            /* Adjust as needed */
+        }
+
+        .form-elem {
+            margin-bottom: 10px;
+        }
+
+        .preview-cnt {
+            display: flex;
+            gap: 20px;
+        }
+
+        .preview-cnt-l {
+            width: 30%;
+            /* Or adjust as needed */
+        }
+
+        .preview-cnt-r {
+            width: 70%;
+            /* Or adjust as needed */
+        }
+
+        .repeater-remove-btn,
+        .repeater-add-btn {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .preview-blk-list {
+            margin-bottom: 10px;
+        }
+
+        .preview-item {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-white">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="brand-and-toggler">
+                    <a href="index.html" class="navbar-brand">
+                        <span class="navbar-brand-text">Jyoti <span>Ranjan.</span></span>
+                    </a>
+                    <button type="button" class="navbar-toggler-btn" title="Toggle navigation">
+                        <div class="bars">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about-sc">
+        <div class="container">
+            <div class="about-cnt">
+                <form action="" class="cv-form" id="cv-form">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="preview-sc" class="print_area">
+    </section>
+
+    <section class="print-btn-sc">
+        <div class="container">
+            <button type="button" class="print-btn btn btn-primary" onclick="printCV()">Print CV</button>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.js"
+        integrity="sha512-bZAXvpVfp1+9AUHQzekEZaXclsgSlAeEnMJ6LfFAvjqYUVZfcuVXeQoN5LhD7Uw0Jy4NCY9q3kbdEXbwhZUmUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
